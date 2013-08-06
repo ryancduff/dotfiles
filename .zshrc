@@ -25,9 +25,12 @@ source $ZSH/oh-my-zsh.sh
 # Will remove from prompt if matches current user
 DEFAULT_USER="ryan"
 
-# Update $PATH
-# @TODO wrap this in file exists check
-source $HOME/.path
+# Update $PATH if we have a local ~/.path file
+if [ -f $HOME/.path ]
+then
+    source $HOME/.path
+fi
+
 
 # WP-CLI autocomplete
 autoload bashcompinit
