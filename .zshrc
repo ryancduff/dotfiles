@@ -35,7 +35,7 @@ fi
 # WP-CLI autocomplete
 autoload bashcompinit
 bashcompinit
-source $HOME/.composer/vendor/wp-cli/wp-cli/utils/wp-completion.bash
+source $HOME/.wp-cli/vendor/wp-cli/wp-cli/utils/wp-completion.bash
 
 # WP-CLI PHP
 export WP_CLI_PHP=/Applications/MAMP/bin/php/php5.4.10/bin/php
