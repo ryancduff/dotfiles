@@ -72,7 +72,7 @@ alias la="ls -laFh --color"
 alias lsd='ls -lFh --color | grep "^d"'
 
 # Always use color output for `ls`
-alias ls="command ls --color"
+# alias ls="command ls --color"
 
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
