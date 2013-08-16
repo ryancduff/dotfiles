@@ -82,6 +82,9 @@
 	symlinks = false
     ;autocrlf = true
 
+[push]
+    default = simple
+
 [color]
     ui = auto
     branch = auto
