@@ -1,12 +1,12 @@
 ; User identification
 [user]
-	name = Ryan Duff
-	email = ryan@fusionized.com
+    name = Ryan Duff
+    email = ryan@fusionized.com
 
 
 ; Custom
 [alias]
-	; List all aliases
+    ; List all aliases
     la = "!git config -l | grep alias | cut -c 7-"
 
     ; basic shortcuts
@@ -78,8 +78,8 @@
 
 ; Environment
 [core]
-	editor = /usr/bin/vim
-	symlinks = false
+    editor = /usr/bin/vim
+    symlinks = false
     ;autocrlf = true
 
 [push]
@@ -109,11 +109,11 @@
     prompt = false
 
 [difftool "kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+    cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 
 [mergetool "kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustExitCode = true
+    cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+    trustExitCode = true
 
 
 ; Notes
