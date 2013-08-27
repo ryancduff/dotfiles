@@ -12,6 +12,7 @@
     ; basic shortcuts
     a = add -p
     aa = add
+    aaa = add .
     cp = cherry-pick
     st = status -s
     cl = clone
