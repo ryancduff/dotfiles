@@ -21,6 +21,11 @@ plugins=(brew cap composer git osx sublime svn vagrant)
 # Load oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
+# ZSH syntax highlighting
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
+ZSH_HIGHLIGHT_PATTERNS+=('rm -rf *' 'fg=white,bold,bg=red')
+
 # Set default user.
 # Will remove from prompt if matches current user
 DEFAULT_USER="ryan"
