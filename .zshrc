@@ -67,6 +67,9 @@ alias sc="sub ."
 alias o="open"
 alias oo="open ."
 
+# Quick edit for hosts file in Sublime Text 2
+alias hosts="sudo sub /etc/hosts"
+
 # List all files colorized in long format
 alias l="ls -lFh --color"
 
