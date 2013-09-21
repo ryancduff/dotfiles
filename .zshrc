@@ -57,6 +57,7 @@ alias -- -="cd -"
 # Shortcuts
 alias d="cd ~/Dropbox"
 alias p="cd ~/Dropbox/Projects"
+alias reload="source ~/.zshrc"
 alias g="git"
 alias h="history"
 alias v="vim"
