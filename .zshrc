@@ -68,6 +68,9 @@ alias sc="sub ."
 alias o="open"
 alias oo="open ."
 
+# Vagrant stuff
+alias vsmash="vagrant destroy -f"
+
 # Quick edit for hosts file in Sublime Text 2
 alias hosts="sudo sub /etc/hosts"
 
