@@ -1,4 +1,3 @@
-require 'erb'
 require 'rake'
 
 task :default => 'install:full_install'
