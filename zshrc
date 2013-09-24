@@ -45,9 +45,6 @@ then
 	source $HOME/.wp-cli/vendor/wp-cli/wp-cli/utils/wp-completion.bash
 fi
 
-# Disable autocorrect for sudo
-alias sudo='nocorrect sudo'
-
 # Aliases
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
@@ -90,8 +87,8 @@ alias lsd='ls -lFh --color | grep "^d"'
 # Always use color output for `ls`
 # alias ls="command ls --color"
 
-# Enable aliases to be sudo’ed
-alias sudo='sudo '
+# Don't correct and enable aliases to be sudo’ed
+alias sudo='nocorrect sudo '
 
 # Get OS X Software Updates, and update Homebrew, npm, and their installed packages
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade;'
