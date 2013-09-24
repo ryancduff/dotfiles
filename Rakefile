@@ -10,6 +10,7 @@ namespace :install do
 		Rake::Task['git:ensure_installed'].invoke
 		Rake::Task['zsh:ensure_installed'].invoke
 		Rake::Task['zsh:ensure_oh_my_zsh'].invoke
+		Rake::Task['zsh:install_oh_my_zsh_syntax_highlighting'].invoke
 		Rake::Task['dotfiles:install'].invoke
 	    puts ""
 	    puts "========================================".green
@@ -124,6 +125,20 @@ namespace :zsh do
 			puts ""
 		else
 			puts "    Error attempting to install Oh My ZSH. Aborting".bold.white.bg_red
+			puts ""
+		end
+	end
+
+	desc "Install Oh My ZSH syntax highlighting plugin"
+	task :install_oh_my_zsh_syntax_highlighting do
+		puts "Checking to see if zsh-syntax-highlighting plugin for Oh My ZSH is installed"
+		if File.exist? File.join(ENV['HOME'], "/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh")
+			puts "    zsh-syntax-highlighting plugin already installed!".green
+			puts ""
+		else
+			puts "    Attempting to install zsh-syntax-highlighting plugin for Oh My ZSH."
+			puts ""
+			system "git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting"
 			puts ""
 		end
 	end
