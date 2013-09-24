@@ -45,6 +45,9 @@ then
 	source $HOME/.wp-cli/vendor/wp-cli/wp-cli/utils/wp-completion.bash
 fi
 
+# Disable autocorrect for sudo
+alias sudo='nocorrect sudo'
+
 # Aliases
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
