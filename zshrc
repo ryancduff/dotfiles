@@ -38,10 +38,12 @@ fi
 
 
 # WP-CLI autocomplete
-autoload bashcompinit
-bashcompinit
-source $HOME/.wp-cli/vendor/wp-cli/wp-cli/utils/wp-completion.bash
-
+if [ -f $HOME/.wp-cli/vendor/wp-cli/wp-cli/utils/wp-completion.bash ]
+then
+	autoload bashcompinit
+	bashcompinit
+	source $HOME/.wp-cli/vendor/wp-cli/wp-cli/utils/wp-completion.bash
+fi
 
 # Aliases
 # Easier navigation: .., ..., ...., ....., ~ and -
