@@ -130,7 +130,8 @@ alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 7'"
 
 # colors
-eval $(dircolors {{ .chezmoi.workingTree }}/extras/dircolors)
+export LS_COLORS="$(vivid generate catppuccin-mocha)"
+#eval $(dircolors {{ .chezmoi.workingTree }}/extras/dircolors)
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
 eval $(starship init zsh)
