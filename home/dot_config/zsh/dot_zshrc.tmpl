@@ -10,7 +10,7 @@ zstyle ':completion:*' cache-path $XDG_CACHE_HOME/zsh/zcompcache
 
 
 # ZSH syntax highlighting
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 # ZSH_HIGHLIGHT_PATTERNS+=('rm -rf *' 'fg=red,bold')
 
@@ -20,9 +20,8 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 DEFAULT_USER="ryan"
 
 export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin":$PATH  # VS Code CLI
-export PATH="/usr/local/opt/coreutils/libexec/gnubin":$PATH                          # GNU utilities instead of default OSX BSD versions
-export PATH="/usr/local/sbin":$PATH                                                  # Homebrew sbin
-export PATH="/usr/local/bin":$PATH                                                   # Homebrew bin
+export PATH="/opt/local/libexec/gnubin":$PATH                                        # GNU utilities instead of default OSX BSD versions (via macports)
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"                                   # Macports bin
 
 exec-zsh() {
   zle -I

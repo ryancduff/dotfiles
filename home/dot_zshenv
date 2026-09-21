@@ -21,12 +21,5 @@ export GIT_REVIEW_BASE=master # See gitconfig
 # less
 export LESSHISTFILE="$XDG_STATE_HOME/less/history"
 
-# docker 
-export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker
-
 # vim
 export VIMINIT="set nocp | source $XDG_CONFIG_HOME/vim/vimrc"
-
-# homebrew
-export HOMEBREW_AUTOREMOVE=1
-export HOMEBREW_NO_ENV_HINTS=1
