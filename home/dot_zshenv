@@ -15,12 +15,6 @@ export XDG_CACHE_HOME=$HOME/.cache
 # zsh
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 
-# nvm
-export NVM_DIR="$XDG_DATA_HOME/nvm"
-
-# npm
-export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
-
 # git
 export GIT_REVIEW_BASE=master # See gitconfig
 
