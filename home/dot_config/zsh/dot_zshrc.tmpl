@@ -73,8 +73,11 @@ alias lsd='ls -lFh --color | grep "^d"'
 # Don't correct and enable aliases to be sudo’ed
 alias sudo='nocorrect sudo '
 
-# Get OS X Software Updates, and update Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade;'
+# Get OS X Software Updates
+alias update='sudo softwareupdate -i -a;'
+
+# Update MacPorts and installed MacPorts packages
+alias mpupdate='sudo port selfupdate && sudo port upgrade outdated'
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
